@@ -21,7 +21,8 @@ Future setDesktopWindow() async {
 }
 
 void main() {
-  // TODO : これは何をやっているのか？
+  // [Important] WidgetsBindingについての理解が要求されるが、コメント文にするには厳しいのでドキュメントとしてまとめておきたい。
+  // runAppの前にFlutterアプリの機能を利用する場合にはWidgetsFlutterBinding.ensureInitialized()をコールする必要があるらしい。
   WidgetsFlutterBinding.ensureInitialized();
 
   // もしデスクトップ向けに起動していた時は、Windowの最小幅、最小高さなどを設定する。
