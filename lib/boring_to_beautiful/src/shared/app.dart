@@ -9,7 +9,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  // TODO [Point] ValueNotifierは何か？
+  // TODO ValueNotifierについて調査
+  // [Point] 状態管理のテクニックらしい。
   final settings = ValueNotifier(ThemeSettings(
     sourceColor: Colors.pink, // Replace this color
     themeMode: ThemeMode.system, // [Point] テーマモードには他に light, dark がある。
