@@ -1,17 +1,17 @@
 // ListViewの使い方について調査用にサンプルページを実装
 import 'package:flutter/material.dart';
 
-class ListViewSamplePage extends StatefulWidget {
-  const ListViewSamplePage({Key? key}) : super(key: key);
+class ListViewPage extends StatefulWidget {
+  const ListViewPage({Key? key}) : super(key: key);
 
   @override
-  State<ListViewSamplePage> createState() => _ListViewSamplePageState();
+  State<ListViewPage> createState() => _ListViewPageState();
 }
 
 final List<String> entries = <String>['A', 'B', 'C'];
 final List<int> colorCodes = <int>[600, 500, 100];
 
-class _ListViewSamplePageState extends State<ListViewSamplePage> {
+class _ListViewPageState extends State<ListViewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
