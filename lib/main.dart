@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:study_flutter/listview_sample/src/list_view_sample.dart';
-
-const listViewSample = ListViewSamplePage();
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +18,7 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.black,
         ),
       ),
-      home: listViewSample,
+      home: null,
     );
   }
 }
