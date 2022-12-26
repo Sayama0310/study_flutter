@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:study_flutter/widget_samples/listview/src/list_view_sample.dart';
+import 'package:study_flutter/widget_samples/listview/src/list_view_home_page.dart';
 
 // ListViewの使い方について学習
 
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
       ),
-      home: const ListViewPage(),
+      home: const ListViewHomePage(),
     );
   }
 }

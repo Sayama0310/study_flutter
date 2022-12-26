@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class ListViewPage extends StatefulWidget {
-  const ListViewPage({Key? key}) : super(key: key);
+class ListViewHomePage extends StatefulWidget {
+  const ListViewHomePage({Key? key}) : super(key: key);
 
   @override
-  State<ListViewPage> createState() => _ListViewPageState();
+  State<ListViewHomePage> createState() => _ListViewHomePageState();
 }
 
 final List<String> entries = <String>['A', 'B', 'C', 'D'];
 final List<int> colorCodes = <int>[600, 500, 100, 20];
 
-class _ListViewPageState extends State<ListViewPage> {
+class _ListViewHomePageState extends State<ListViewHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
