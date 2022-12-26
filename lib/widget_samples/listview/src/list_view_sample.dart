@@ -7,8 +7,8 @@ class ListViewPage extends StatefulWidget {
   State<ListViewPage> createState() => _ListViewPageState();
 }
 
-final List<String> entries = <String>['A', 'B', 'C'];
-final List<int> colorCodes = <int>[600, 500, 100];
+final List<String> entries = <String>['A', 'B', 'C', 'D'];
+final List<int> colorCodes = <int>[600, 500, 100, 20];
 
 class _ListViewPageState extends State<ListViewPage> {
   @override
@@ -46,6 +46,7 @@ class _ListViewPageState extends State<ListViewPage> {
               ),
             ),
           ),
+          // [Widget-Point]  ListView.builderにより配列を使って要素を書くことができる。
           Expanded(
             child: Center(
               child: ListView.builder(
@@ -61,6 +62,23 @@ class _ListViewPageState extends State<ListViewPage> {
               ),
             ),
           ),
+          // [Widget-Point] ListView.separatedでリスト要素の間（separator）を実装することができる。
+          Center(
+            child: ListView.separated(
+              shrinkWrap: true,
+              padding: const EdgeInsets.all(8),
+              itemCount: entries.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Container(
+                  height: 50,
+                  color: Colors.amber[colorCodes[index]],
+                  child: Center(child: Text('Entry ${entries[index]}')),
+                );
+              },
+              separatorBuilder: (BuildContext context, int index) =>
+                  const Divider(),
+            ),
+          )
         ],
       ),
     );
