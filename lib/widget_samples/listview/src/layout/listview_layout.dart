@@ -37,6 +37,8 @@ class _ListviewLayoutState extends State<ListviewLayout> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
+            // [Widget-Point] Iconはここのサイトで曖昧検索すれば大体OK
+            // c.f. https://fonts.google.com/icons
             icon: Icon(Icons.hotel),
             label: 'Lazy',
           ),
