@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         // Add the 5 lines from here...
         appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black,
+          backgroundColor: Colors.amber,
+          foregroundColor: Colors.white,
         ),
       ),
       home: const ListViewPage(),
