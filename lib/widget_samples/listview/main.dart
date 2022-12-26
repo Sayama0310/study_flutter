@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:study_flutter/widget_samples/listview/src/list_view_sample.dart';
 
+// ListViewの使い方について学習
+
 void main() {
   runApp(const MyApp());
 }
