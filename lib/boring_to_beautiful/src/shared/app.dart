@@ -10,10 +10,11 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   // TODO ValueNotifierについて調査
-  // [Point] 状態管理のテクニックらしい。
+  // [Flutter-Point] ValueNotifierは状態管理のテクニックらしい。
   final settings = ValueNotifier(ThemeSettings(
     sourceColor: Colors.pink, // Replace this color
-    themeMode: ThemeMode.system, // [Point] テーマモードには他に light, dark がある。
+    themeMode:
+        ThemeMode.system, // [Flutter-Point] ThemeModeには他に light, dark がある。
   ));
 
   @override
