@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:study_flutter/sliver_app_bar/src/component/article_panel.dart';
-import 'package:study_flutter/sliver_app_bar/src/data/articles.dart';
+import 'package:study_flutter/sliver_app_bar/src/dataset/articles.dart';
 
 class SliverAppBarPage extends StatefulWidget {
   const SliverAppBarPage({super.key});
