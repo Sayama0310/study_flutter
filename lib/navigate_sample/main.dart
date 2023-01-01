@@ -16,8 +16,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Startup Name Generator',
+      // TODO : ThemeDataがうまく使いかなせていない
       theme: ThemeData(
-        // Add the 5 lines from here...
+        primaryColor: Colors.black12,
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.white,
           foregroundColor: Colors.black,

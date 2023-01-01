@@ -31,6 +31,10 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+      // TODO : bottomNavigationBarでページ遷移をしたい
+      // bottomNavigationBar: BottomNavigationBar(
+      //   items: [],
+      // ),
     );
   }
 }
