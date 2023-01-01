@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:study_flutter/sliver_app_bar/src/dataset/haiku.dart';
 
 class HaikuPanel extends StatelessWidget {
-  final String haiku;
+  final Haiku haiku;
 
   const HaikuPanel({Key? key, required this.haiku}) : super(key: key);
 
@@ -16,7 +17,7 @@ class HaikuPanel extends StatelessWidget {
             children: [
               ListTile(
                 title: Text(
-                  haiku,
+                  haiku.haiku,
                   style: const TextStyle(fontSize: 18),
                 ),
               ),

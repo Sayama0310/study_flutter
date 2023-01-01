@@ -54,7 +54,7 @@ class _SliverAppBarPageState extends State<SliverAppBarPage> {
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (BuildContext context, int index) {
-                return HaikuPanel(haiku: haikuList[index].haiku);
+                return HaikuPanel(haiku: haikuList[index]);
               },
               childCount: haikuList.length,
             ),
