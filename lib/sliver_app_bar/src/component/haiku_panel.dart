@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:study_flutter/sliver_app_bar/src/dataset/haiku.dart';
 
+// TODO パネルの左側にimageURLによる画像を表示
 class HaikuPanel extends StatelessWidget {
   final Haiku haiku;
 
