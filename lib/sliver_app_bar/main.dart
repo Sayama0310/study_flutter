@@ -11,6 +11,7 @@ void main() {
   runApp(const MyApp());
 }
 
+// TODO : SliverAppを使ってLayoutを調整するには同志行ったら良いか？
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
