@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class ArticlePanel extends StatelessWidget {
-  final String title;
+class HaikuPanel extends StatelessWidget {
+  final String haiku;
 
-  const ArticlePanel({super.key, required this.title});
+  const HaikuPanel({Key? key, required this.haiku}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class ArticlePanel extends StatelessWidget {
             children: [
               ListTile(
                 title: Text(
-                  title,
+                  haiku,
                   style: const TextStyle(fontSize: 18),
                 ),
               ),

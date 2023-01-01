@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:study_flutter/sliver_app_bar/src/component/article_panel.dart';
-import 'package:study_flutter/sliver_app_bar/src/dataset/articles.dart';
+import 'package:study_flutter/sliver_app_bar/src/component/haiku_panel.dart';
+import 'package:study_flutter/sliver_app_bar/src/dataset/haiku.dart';
 
 class SliverAppBarPage extends StatefulWidget {
   const SliverAppBarPage({super.key});
@@ -34,7 +34,7 @@ class _SliverAppBarPageState extends State<SliverAppBarPage> {
             expandedHeight: 180,
             toolbarHeight: 60,
             flexibleSpace: FlexibleSpaceBar(
-              title: const Text('記事一覧'),
+              title: const Text('俳句一覧'),
               // [Widget-Point] stretchがtrueの時の振る舞いをかく。
               stretchModes: const [
                 StretchMode.zoomBackground,
@@ -45,7 +45,7 @@ class _SliverAppBarPageState extends State<SliverAppBarPage> {
               background: SizedBox(
                 width: double.infinity,
                 child: Image.network(
-                  'https://images.pexels.com/photos/14816369/pexels-photo-14816369.jpeg',
+                  'https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg',
                   fit: BoxFit.cover,
                 ),
               ),
@@ -54,9 +54,9 @@ class _SliverAppBarPageState extends State<SliverAppBarPage> {
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (BuildContext context, int index) {
-                return ArticlePanel(title: articles[index].title);
+                return HaikuPanel(haiku: haikuList[index].haiku);
               },
-              childCount: articles.length,
+              childCount: haikuList.length,
             ),
           )
         ],
