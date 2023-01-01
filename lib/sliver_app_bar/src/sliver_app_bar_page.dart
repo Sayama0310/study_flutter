@@ -41,7 +41,8 @@ class _SliverAppBarPageState extends State<SliverAppBarPage> {
                 StretchMode.blurBackground,
                 StretchMode.fadeTitle
               ],
-              background: Container(
+              // [Widget-Point] widthとheightでのみContainerではなくSizedBoxの方が描画コストが低いらしい。
+              background: SizedBox(
                 width: double.infinity,
                 child: Image.network(
                   'https://images.pexels.com/photos/14816369/pexels-photo-14816369.jpeg',
