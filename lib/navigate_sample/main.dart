@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Navigator Sample App',
       theme: ThemeData(
-        primaryColor: Colors.amber,
         primarySwatch: Colors.amber,
         bottomAppBarColor: Colors.amber,
       ),
