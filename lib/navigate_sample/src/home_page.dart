@@ -1,8 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:study_flutter/navigate_sample/src/second_page.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -31,10 +44,43 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      // TODO : bottomNavigationBarでページ遷移をしたい
-      // bottomNavigationBar: BottomNavigationBar(
-      //   items: [],
-      // ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.book),
+            activeIcon: Icon(Icons.book_online),
+            label: 'Book',
+            tooltip: "This is a Book Page",
+            backgroundColor: Colors.amber, // TODO Themeはどこで適用されるの？
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business),
+            activeIcon: Icon(Icons.business_center),
+            label: 'Business',
+            tooltip: "This is a Business Page",
+            backgroundColor: Colors.amber,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.school),
+            activeIcon: Icon(Icons.school_outlined),
+            label: 'School',
+            tooltip: "This is a School Page",
+            backgroundColor: Colors.amber,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            activeIcon: Icon(Icons.settings_outlined),
+            label: 'Settings',
+            tooltip: "This is a Settings Page",
+            backgroundColor: Colors.amber,
+          ),
+        ],
+        backgroundColor: Colors.amber,
+        enableFeedback: true,
+        iconSize: 20,
+      ),
     );
   }
 }

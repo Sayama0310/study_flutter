@@ -16,13 +16,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Navigator Sample App',
-      // TODO : ThemeDataがうまく使いかなせていない
       theme: ThemeData(
-        primaryColor: Colors.black12,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black,
-        ),
+        primaryColor: Colors.amber,
+        primarySwatch: Colors.amber,
+        bottomAppBarColor: Colors.amber,
       ),
       home: const HomePage(),
     );
