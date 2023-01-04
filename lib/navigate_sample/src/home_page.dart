@@ -44,6 +44,10 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+      // [Widget-Point] bottomNavigationBarの使い方についてざっくりまとまった記事があった
+      // c.f. https://zenn.dev/urasan/articles/5bb85a54fb23fb
+      // [Flutter-Point] RiverpodでBottomNavigationBarを実装してみるという記事があった
+      // c.f. https://zenn.dev/joo_hashi/articles/ee8037bdeb7b4b
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
