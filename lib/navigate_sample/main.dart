@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Startup Name Generator',
+      title: 'Navigator Sample App',
       // TODO : ThemeDataがうまく使いかなせていない
       theme: ThemeData(
         primaryColor: Colors.black12,
