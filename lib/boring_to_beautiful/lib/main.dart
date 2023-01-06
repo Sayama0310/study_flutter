@@ -2,7 +2,7 @@ import 'package:desktop_window/desktop_window.dart';
 import 'package:flutter/material.dart';
 import 'package:universal_platform/universal_platform.dart';
 
-import 'src/shared/app.dart';
+import 'shared/app.dart';
 
 // https://codelabs.developers.google.com/codelabs/flutter-boring-to-beautiful#0
 // https://github.com/flutter/codelabs/tree/master

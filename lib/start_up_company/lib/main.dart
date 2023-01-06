@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:study_flutter/start_up_company/src/start_up_company.dart';
+
+import 'start_up_company.dart';
 
 void main() {
   runApp(const MyApp());

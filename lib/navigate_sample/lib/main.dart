@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:study_flutter/navigate_sample/src/page/home_page.dart';
+
+import 'page/home_page.dart';
 
 // 『基礎から学ぶFlutter』
 // 以下を学習

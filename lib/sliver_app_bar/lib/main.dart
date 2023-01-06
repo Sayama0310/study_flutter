@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:study_flutter/sliver_app_bar/src/page/sliver_app_bar_page.dart';
+
+import 'page/sliver_app_bar_page.dart';
 
 // 『現場で使えるFlutter開発入門』2-5 SliverAppBar
 // 少し凝った作りのヘッダーなどが使えるSliverAppBarなどを使うサンプルがあったので実際に使ってみる。

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:study_flutter/sliver_app_bar/src/component/haiku_panel.dart';
-import 'package:study_flutter/sliver_app_bar/src/dataset/haiku.dart';
+
+import '../component/haiku_panel.dart';
+import '../dataset/haiku.dart';
 
 class SliverAppBarPage extends StatefulWidget {
   const SliverAppBarPage({super.key});
