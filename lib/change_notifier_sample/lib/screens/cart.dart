@@ -16,7 +16,7 @@ class MyCart extends StatelessWidget {
         backgroundColor: Colors.white,
       ),
       body: Container(
-        color: Colors.yellow,
+        color: Colors.green,
         child: Column(
           children: [
             Expanded(
