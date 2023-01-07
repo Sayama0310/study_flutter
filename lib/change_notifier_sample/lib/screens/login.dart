@@ -38,7 +38,10 @@ class MyLogin extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.yellow,
                 ),
-                child: const Text('ENTER'),
+                child: const Text(
+                  'ENTER',
+                  style: TextStyle(color: Colors.white),
+                ),
               )
             ],
           ),
