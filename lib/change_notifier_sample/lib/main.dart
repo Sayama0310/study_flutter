@@ -38,6 +38,7 @@ void setupWindow() {
   }
 }
 
+// TODO routerの使い方についてまとめてみたい
 GoRouter router() {
   return GoRouter(
     initialLocation: '/login',
@@ -65,7 +66,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Using MultiProvider is convenient when providing multiple objects.
+    // [Flutter-Point] 複数のオブジェクトを提供するときはMultiProviderが便利
     return MultiProvider(
       providers: [
         // In this sample app, CatalogModel never changes, so a simple Provider

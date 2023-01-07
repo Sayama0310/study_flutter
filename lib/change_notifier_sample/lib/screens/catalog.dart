@@ -14,6 +14,8 @@ class MyCatalog extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           _MyAppBar(),
+          // [Widget-Point] Sliver系での余白はSliverToBoxAdapterが使用できる
+          // 余白用のSizedBoxだけでなく、Textなどを置くこともできる。単一のWidgetを配置するために使用する。
           const SliverToBoxAdapter(child: SizedBox(height: 12)),
           SliverList(
             delegate: SliverChildBuilderDelegate(
@@ -101,6 +103,10 @@ class _MyListItem extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      // [Widget-Point] 制約のない時だけ大きさを制限する箱
+      // 制限のない環境ではWidgetはできるだけ大きくしようとしますが、これを設定することで最大の
+      // 高さを設定できます。
+      // ListViewなどを使うときはヒントになるかも。
       child: LimitedBox(
         maxHeight: 48,
         child: Row(
@@ -112,6 +118,8 @@ class _MyListItem extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 24),
+            // [Widget-Point] Row、Column、Flexの子ウィジェットを拡張して、その子が
+            // 利用可能なスペースを埋めるようにするウィジェットです。
             Expanded(
               child: Text(item.name, style: textTheme),
             ),

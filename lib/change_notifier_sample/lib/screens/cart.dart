@@ -8,6 +8,8 @@ class MyCart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // [Flutter-Point] [MyCatalog]ではSliver系のページになっている。
+    // つまり、Sliver系のページと、そうでないページを混ぜることができる。
     return Scaffold(
       appBar: AppBar(
         title: Text('Cart', style: Theme.of(context).textTheme.displayLarge),
@@ -84,6 +86,9 @@ class _CartTotal extends StatelessWidget {
             const SizedBox(width: 24),
             TextButton(
               onPressed: () {
+                // [Widget-Point] 軽量メッセージを表示する方法。
+                // ScaffoldMessenger.of(context).showSnackBar()にSnackBarインスタンスを
+                // 渡せば良い。
                 ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(content: Text('Buying not supported yet.')));
               },
