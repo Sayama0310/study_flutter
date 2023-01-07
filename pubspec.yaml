@@ -43,6 +43,7 @@ dependencies:
   universal_platform: ^1.0.0+1
   flutter_bloc: ^8.1.1
   flutter_riverpod: ^2.1.1
+  provider: ^6.0.0
 
 dev_dependencies:
   flutter_test:
