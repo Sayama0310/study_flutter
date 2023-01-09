@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:window_size/window_size.dart';
 
+// TODO 内部プロジェクトのコードをimportするときに 'package:****' という書き方の方がいいか？
 import 'common/theme.dart';
 import 'models/cart.dart';
 import 'models/catalog.dart';
@@ -69,12 +70,10 @@ class MyApp extends StatelessWidget {
     // [Flutter-Point] 複数のオブジェクトを提供するときはMultiProviderが便利
     return MultiProvider(
       providers: [
-        // In this sample app, CatalogModel never changes, so a simple Provider
-        // is sufficient.
+        // このサンプルアプリでは、CatalogModel が変更されることはないので、単純に Provider で十分です。
         Provider(create: (context) => CatalogModel()),
-        // CartModel is implemented as a ChangeNotifier, which calls for the use
-        // of ChangeNotifierProvider. Moreover, CartModel depends
-        // on CatalogModel, so a ProxyProvider is needed.
+        // CartModel は ChangeNotifier として実装されており、ChangeNotifierProvider の利用を呼びかけています。
+        // また、CartModel は CatalogModel に依存しているため、ProxyProvider が必要になります。
         ChangeNotifierProxyProvider<CatalogModel, CartModel>(
           create: (context) => CartModel(),
           update: (context, catalog, cart) {

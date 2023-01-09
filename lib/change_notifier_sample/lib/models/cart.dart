@@ -1,12 +1,9 @@
-// Copyright 2019 The Flutter team. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 import 'package:flutter/foundation.dart';
 
 import 'catalog.dart';
 
-class CartModel extends ChangeNotifier {
+// TODO extendsを使っている記事とwithを使っている記事の二つがあったが、どちらの方がいいのか？
+class CartModel with ChangeNotifier {
   /// The private field backing [catalog].
   late CatalogModel _catalog;
 
